@@ -1,38 +1,39 @@
-# PyTorch ile Derin Öğrenme
+# PyTorch Derin Öğrenme Notları
 
-PyTorch'u sıfırdan öğrenmek için hazırladığım kapsamlı bir eğitim serisi. Temel tensor işlemlerinden production deployment'a kadar her şey var.
+PyTorch öğrenirken tuttuğum notlar ve kod örnekleri. Temel tensor işlemlerinden başlayıp production deployment'a kadar gidiyor.
 
-## Neden bu repo?
+## Neden?
 
-Türkçe PyTorch kaynakları genelde yüzeysel kalıyor. Ben sadece API'leri göstermekle kalmayıp, altında ne olduğunu da anlatmak istedim. Bellekte stride nasıl çalışır, GPU transfer neden yavaş, autograd nasıl gradient hesaplar gibi konulara giriyorum.
+Türkçe PyTorch kaynaklarının çoğu sadece API kullanımını gösteriyor. Ben biraz daha derine inip altında ne olduğunu anlamaya çalıştım. Mesela stride nasıl çalışır, GPU transfer neden yavaş olabilir, autograd gradient'leri nasıl hesaplar gibi.
 
 ## İçerik
 
-Toplam 50 ders planladım, şu an 7 tanesi hazır.
+Şu an 7 ders hazır, toplamda 50 ders olacak.
 
-### Faz 1: Tensors & Computational Graph ✅
+### Hazır Olanlar
 
-1. **Tensor Mechanics** - Storage, stride, contiguous memory
-2. **GEMM & Broadcasting** - Matris çarpımı optimizasyonu
-3. **Advanced Indexing** - Masking, fancy indexing
-4. **View & Reshape** - Bellek optimizasyonu
-5. **GPU Acceleration** - CUDA, pinned memory, streams
-6. **Autograd Engine** - Gradient hesaplama mekanizması
-7. **Custom Autograd** - Kendi türev fonksiyonunu yazma
+**Faz 1: Tensors & Autograd**
+- Tensor mechanics (storage, stride, contiguous memory)
+- GEMM & broadcasting (matris çarpımı optimizasyonu)
+- Advanced indexing (masking, fancy indexing)
+- View & reshape (bellek optimizasyonu)
+- GPU acceleration (CUDA, pinned memory, streams)
+- Autograd engine (gradient hesaplama)
+- Custom autograd (kendi türev fonksiyonunu yazma)
 
-### Gelecek Fazlar
+### Planlananlar
 
-- Faz 2: Neural Networks (Linear regression, nn.Module, activations, loss, optimizers)
-- Faz 3: Data Engineering (Dataset, DataLoader, augmentation)
-- Faz 4: Training Loop (Checkpointing, logging, early stopping)
-- Faz 5: Computer Vision (CNN, ResNet, transfer learning)
-- Faz 6: NLP & Sequences (RNN, LSTM, attention)
-- Faz 7: Transformers (Self-attention, encoder-decoder)
-- Faz 8: Generative AI (VAE, GAN)
-- Faz 9: Deployment (Quantization, ONNX, TorchScript)
-- Faz 10: Projeler (Style transfer, BERT fine-tuning, image captioning)
+- Neural networks (linear regression, nn.Module, activations, loss, optimizers)
+- Data engineering (Dataset, DataLoader, augmentation)
+- Training loop (checkpointing, logging, early stopping)
+- Computer vision (CNN, ResNet, transfer learning)
+- NLP (RNN, LSTM, attention)
+- Transformers (self-attention, encoder-decoder)
+- Generative models (VAE, GAN)
+- Deployment (quantization, ONNX, TorchScript)
+- Projeler (style transfer, BERT fine-tuning, image captioning)
 
-## Nasıl kullanılır?
+## Kullanım
 
 ```bash
 git clone https://github.com/tekay19/LearningDEEP.git
@@ -40,7 +41,7 @@ cd LearningDEEP/Faz_1_Tensors
 python 01_tensor_mechanics.py
 ```
 
-Her ders çalıştırılabilir Python kodu. Bazı dersler için ders notları da var.
+Her ders çalıştırılabilir Python kodu. Bazılarının yanında ders notları da var.
 
 ## Gereksinimler
 
@@ -48,11 +49,7 @@ Her ders çalıştırılabilir Python kodu. Bazı dersler için ders notları da
 - PyTorch 2.0+
 - NumPy
 
-GPU opsiyonel. Kodlar CPU'da da çalışır.
-
-## Katkıda bulunma
-
-Hata bulursanız veya öneri varsa issue açabilirsiniz.
+GPU opsiyonel, kodlar CPU'da da çalışır.
 
 ## Lisans
 
